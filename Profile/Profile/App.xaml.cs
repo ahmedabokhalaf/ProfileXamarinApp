@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Profile.Services;
+using Profile.ViewModel;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,8 +12,8 @@ namespace Profile
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            
+           MainPage = new MainPage();
         }
 
         protected override void OnStart()

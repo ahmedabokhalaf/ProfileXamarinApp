@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Profile\\Profile\\Profile.iOS\\Profile.iOS.csproj": {}
+    "D:\\Projects\\ProfileXamarinApp\\Profile\\Profile.iOS\\Profile.iOS.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Profile\\Profile\\Profile.iOS\\Profile.iOS.csproj": {
+    "D:\\Projects\\ProfileXamarinApp\\Profile\\Profile.iOS\\Profile.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Profile\\Profile\\Profile.iOS\\Profile.iOS.csproj",
+        "projectUniqueName": "D:\\Projects\\ProfileXamarinApp\\Profile\\Profile.iOS\\Profile.iOS.csproj",
         "projectName": "Profile.iOS",
-        "projectPath": "D:\\Projects\\Profile\\Profile\\Profile.iOS\\Profile.iOS.csproj",
+        "projectPath": "D:\\Projects\\ProfileXamarinApp\\Profile\\Profile.iOS\\Profile.iOS.csproj",
         "packagesPath": "C:\\Users\\AhmedKH\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Profile\\Profile\\Profile.iOS\\obj\\",
+        "outputPath": "D:\\Projects\\ProfileXamarinApp\\Profile\\Profile.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "D:\\Projects\\Profile\\Profile\\Profile\\Profile.csproj": {
-                "projectPath": "D:\\Projects\\Profile\\Profile\\Profile\\Profile.csproj"
+              "D:\\Projects\\ProfileXamarinApp\\Profile\\Profile\\Profile.csproj": {
+                "projectPath": "D:\\Projects\\ProfileXamarinApp\\Profile\\Profile\\Profile.csproj"
               }
             }
           }
@@ -44,6 +44,10 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
@@ -67,14 +71,14 @@
         }
       }
     },
-    "D:\\Projects\\Profile\\Profile\\Profile\\Profile.csproj": {
+    "D:\\Projects\\ProfileXamarinApp\\Profile\\Profile\\Profile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Profile\\Profile\\Profile\\Profile.csproj",
+        "projectUniqueName": "D:\\Projects\\ProfileXamarinApp\\Profile\\Profile\\Profile.csproj",
         "projectName": "Profile",
-        "projectPath": "D:\\Projects\\Profile\\Profile\\Profile\\Profile.csproj",
+        "projectPath": "D:\\Projects\\ProfileXamarinApp\\Profile\\Profile\\Profile.csproj",
         "packagesPath": "C:\\Users\\AhmedKH\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Profile\\Profile\\Profile\\obj\\",
+        "outputPath": "D:\\Projects\\ProfileXamarinApp\\Profile\\Profile\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -109,11 +113,23 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[7.0.2, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
