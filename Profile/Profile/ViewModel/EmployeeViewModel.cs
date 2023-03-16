@@ -34,17 +34,16 @@ namespace Profile.ViewModel
             }
         }
 
-        public async Task UpdateEmployee(int id)
-        {
-            try
-            {
-                id = 3;
-                var emp = await service.GetEmployee(id);
-                await service.Update(id, emp);
-            }catch(Exception ex)
-            {
+        //public async Task UpdateEmployee(int id)
+        //{
+        //    try
+        //    {
+                
+        //        await service.Update(id, emp);
+        //    }catch(Exception ex)
+        //    {
 
-            }
-        }
+        //    }
+        //}
     }
 }
